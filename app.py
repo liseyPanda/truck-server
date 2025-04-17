@@ -18,9 +18,9 @@ def db_connection():
     )
 
 # DNS URLs to HQ and Cloud (now HTTPS over 8080)
-HQ_URL = "https://hq:8080/update"
-CLOUD_URL = "https://cloud:8080/update"
-ELASTICSEARCH_URL = "http://elasticsearch:9200"
+HQ_URL = "https://hq-server-git-kompose-ndrc.apps.osc-hq.hq.ndrc.mil:8080/update"
+CLOUD_URL = "https://cloud-server-git-kompose-ndrc.apps.osc-cloud.cloud.ndrc.mil:8080/update"
+ELASTICSEARCH_URL = "http://elasticsearch-server-git-kompose-ndrc.apps.osc-elasticsearch.elasticsearch.ndrc.mil:9200";
 
 scheduler = APScheduler()
 latest_events = []
