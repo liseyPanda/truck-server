@@ -98,8 +98,8 @@
 
     
         async function sendTruckUpdateToHQ(truck) {
-            let hqUrl = "https://hq:8080/update";  // HQ API
-            let cloudUrl = "https://cloud:8080/update";  // Cloud API
+            let hqUrl = "https://hq-server-git-kompose-ndrc.apps.osc-hq.hq.ndrc.mil:8080/update";  // HQ API
+            let cloudUrl = "https://cloud-server-git-kompose-ndrc.apps.osc-cloud.cloud.ndrc.mil:8080/update";  // Cloud API
 
             try {
                 console.log(`📤 Sending update for ${truck.id} to HQ: ${truck.event}`);
