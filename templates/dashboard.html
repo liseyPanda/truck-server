@@ -98,8 +98,8 @@
 
     
         async function sendTruckUpdateToHQ(truck) {
-            let hqUrl = "http://localhost:5001/update";  // HQ API
-            let cloudUrl = "http://localhost:5004/update";  // Cloud API
+            let hqUrl = "https://hq:8080/update";  // HQ API
+            let cloudUrl = "https://cloud:8080/update";  // Cloud API
 
             try {
                 console.log(`📤 Sending update for ${truck.id} to HQ: ${truck.event}`);
