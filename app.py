@@ -20,7 +20,7 @@ def db_connection():
 # DNS URLs to HQ and Cloud (now HTTPS over 8080)
 HQ_URL = "https://hq-server-git-kompose-ndrc.apps.osc-hq.hq.ndrc.mil:8080/update"
 CLOUD_URL = "https://cloud-server-git-kompose-ndrc.apps.osc-trailer.trailer.ndrc.mil:8080/update"
-ELASTICSEARCH_URL = "https://elasticsearch-route-kompose-ndrc.apps.osc-trailer.trailer.ndrc.mil:9200";
+ELASTICSEARCH_URL = "http://elasticsearch-route-kompose-ndrc.apps.osc-trailer.trailer.ndrc.mil";
 
 scheduler = APScheduler()
 latest_events = []
